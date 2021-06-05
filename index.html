@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!--ICONS-->
+  <script src="https://kit.fontawesome.com/52e1924adf.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <main id="main">
+    <header id="header">
+      <h1 id="title">Cream and Cake Shop Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us serve you better</p>
+    </header>
+    <section id="section">
+      <form action="#" id="survey-form">
+        <div class="input-container">
+          <label for="name" id="name-label"><i class="fa fa-user icon"></i></label>
+          <input class="input-field" type="text" id="name" name="name" required placeholder="Enter your name"><br />
+        </div>
+
+        <div class="input-container">
+          <label for="email" id="email-label"><i class="fa fa-envelope icon"></i></label>
+          <input class="input-field"  type="email"  id="email" name="email" placeholder="Email" required pattern=".+@gmail.com" required><br />
+        </div>
+
+        <div>
+          <label for="number" id="number-label">Postal Code:</label>
+          <input type="number" id="number" name="number" placeholder="postal code"required  min="1" max="10"><br />
+        </div>
+
+        <fieldset class="addmarg">
+          <legend>Select Gender</legend>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label><br />
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br />
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label>
+        </fieldset>
+        <br />
+
+        <div>
+          <p>Pick your Favourite Products</p>
+          <input type="checkbox" id="cake" name="products" value="cake">
+          <label for="checkbox">Vanilla Cake</label><br />
+          <input type="checkbox" id="minticecream" name="products" value="cake">
+          <label for="minticecream">Mint Ice-Cream</label><br />
+          <input type="checkbox" id="spongecake" name="products" value="cake">
+          <label for="spongecake">Sponge Cake</label><br />
+          <input type="checkbox" id="chocolatecake" name="products" value="cake" checked>
+          <label for="chocolatecake">Chocolate Cake</label><br />
+          <input type="checkbox" id="peanuticecream" name="products" value="cake">
+          <label for="peanuticecream">Peanut-flavour Ice-Cream</label><br />
+          <input type="checkbox" id="redvelvetcake" name="products" value="cake">
+          <label for="redvelvetcake">Red-velvet Cake</label><br />
+          <input type="checkbox" id="coconutcake" name="products" value="cake">
+          <label for="coconutcake">Coconut Cake</label><br />
+          <input type="checkbox" id="strawberrycake" name="products" value="cake" checked>
+          <label for="strawberry">Strawberry Cake</label><br />
+          <input type="checkbox" id="strawberryicecream" name="products" value="cake">
+          <label for="strawberryicecream">Strawberry Ice-Cream</label><br />
+          <input type="checkbox" id="vanillaicecream" name="products" value="cake">
+          <label for="vanillaicecream">Vanilla Ice-Cream</label><br />
+        </div>
+
+        <div class="addmarg">
+          <label for="dropdown">What is your best delivery option:
+            <br />
+            <select name="dropdown" id="dropdown">
+              <option value="dispatchrider">Home Delivery</option>
+              <option value="pickup">Pick-up</option>
+              <option value="mail">Office Delivery</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="addmarg">
+          <label for="comments">Any comments or suggestions?</label><br />
+          <textarea id="comments" name="comments" rows="4" placeholder="Drop your comments"></textarea>
+        </div>
+        
+        <button id="submit-btn">Submit</button>
+
+      </form>
+    </section>
+  </main>
+</body>
+</html>
